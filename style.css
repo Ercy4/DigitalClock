@@ -23,6 +23,11 @@ body {
   color: #fff;
   margin-bottom: 1rem;
   text-shadow: 0 0 10px rgba(10, 175, 230, 0.8);
+
+   @media (max-width: 600px) {
+          font-size: 1.2rem;
+          margin-bottom: 0.5rem;
+        }
 }
 
 #clock {
@@ -31,10 +36,20 @@ body {
   font-weight: bold;
   color: #fff;
   text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+
+    @media (max-width: 600px) {
+          font-size: 3.5rem;
+        }
 }
 
 #format-buttons {
   margin-top: 1.5rem;
+
+  @media (max-width: 600px) {
+          flex-direction: column;
+          gap: 0.5rem;
+          margin-top: 1rem;
+        }
 }
 
 #format-buttons button {
