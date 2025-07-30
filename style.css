@@ -5,29 +5,11 @@ body {
 
 #clock-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
-
-#clock-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#date {
-  font-family: monospace;
-  font-size: 2rem;
-  color: #fff;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(10, 175, 230, 0.8);
-
-   @media (max-width: 600px) {
-          font-size: 1.2rem;
-          margin-bottom: 0.5rem;
-        }
+  
 }
 
 #clock {
@@ -42,31 +24,12 @@ body {
         }
 }
 
-#format-buttons {
-  margin-top: 1.5rem;
 
-  @media (max-width: 600px) {
-          flex-direction: column;
-          gap: 0.5rem;
-          margin-top: 1rem;
-        }
-}
-
-#format-buttons button {
+#date {
   font-family: monospace;
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
-  background-color: #0aaee6;
-  border: none;
-  border-radius: 8px;
+  font-size: 2rem;
   color: #fff;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(10, 175, 230, 0.8);
-  transition: background 0.3s ease;
-}
-
-#format-buttons button:hover {
-  background-color: #088ab5;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(10, 175, 230, 0.8);
 }
 
